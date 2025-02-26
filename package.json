@@ -1,0 +1,12 @@
+{
+  "name": "folio-v1",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "deploy": "next build && (if not exist out mkdir out) && (if not exist out\\.nojekyll type nul > out\\.nojekyll) && gh-pages -d out"
+  }
+}
