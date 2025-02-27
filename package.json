@@ -7,17 +7,21 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "deploy": "next build && (if not exist out mkdir out) && (if not exist out\\.nojekyll type nul > out\\.nojekyll) && gh-pages -d out"
+    "export": "next build && next export"
   },
   "devDependencies": {
     "@babel/core": "^7.22.9",
     "@babel/eslint-parser": "^7.22.9",
-    "@typescript-eslint/eslint-plugin": "^5.0.0",
-    "@typescript-eslint/parser": "^5.0.0",
-    "eslint": "^8.35.0",
-    "eslint-config-next": "^13.2.3",
-    "eslint-plugin-react": "^7.32.2",
-    "next": "^15.1.7",
-    "typescript": "~4.9.5"
+    "@typescript-eslint/eslint-plugin": "^5.62.0",
+    "@typescript-eslint/parser": "^5.62.0",
+    "eslint": "^8.45.0",
+    "eslint-config-next": "^13.4.12",
+    "eslint-plugin-react": "^7.33.0",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "next": "^13.4.12",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }
